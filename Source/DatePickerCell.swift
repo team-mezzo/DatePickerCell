@@ -46,15 +46,16 @@ public class DatePickerCell: UITableViewCell {
     public var date:NSDate = NSDate() {
         didSet {
             datePicker.date = date
-            DatePickerCell.Stored.dateFormatter.dateStyle = dateStyle
+//            DatePickerCell.Stored.dateFormatter.dateStyle = dateStyle
             DatePickerCell.Stored.dateFormatter.timeStyle = timeStyle
+            DatePickerCell.Stored.dateFormatter == "HH:mm a"
             rightLabel.text = DatePickerCell.Stored.dateFormatter.stringFromDate(date)
         }
     }
     /// The timestyle.
     public var timeStyle = NSDateFormatterStyle.ShortStyle
     /// The datestyle.
-    public var dateStyle = NSDateFormatterStyle.MediumStyle
+//    public var dateStyle = NSDateFormatterStyle.NoStyle
     
     /// Label on the left side of the cell.
     public var leftLabel = UILabel()
