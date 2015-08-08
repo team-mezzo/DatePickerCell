@@ -62,7 +62,8 @@ public class DatePickerCell: UITableViewCell {
     /// Label on the right side of the cell.
     public var rightLabel = UILabel()
     /// Default color of the right label.
-    public var rightLabelTextColor = UIColor(hue: 0.639, saturation: 0.041, brightness: 0.576, alpha: 1.0) //Color of normal detail label.
+//    public var rightLabelTextColor = UIColor(hue: 0.639, saturation: 0.041, brightness: 0.576, alpha: 1.0) //Color of normal detail label.
+    public var rightLabelTextColor = UIColor.purpleColor()
     
     var seperator = DVColorLockView()
     
